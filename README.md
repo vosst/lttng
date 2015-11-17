@@ -5,12 +5,13 @@ This library provides C++(11) classes and functions for interacting with [lttng]
 The library is primarily used as a convenience tool to support integration- and acceptance-testing infrastructure, specifically for setups that span across multiple processes and additionally require capturing kernel behavior.
 
 # Dependencies
-    - Boost
-        - coroutine/context: For an easy async pattern.
-        - filesystem: For handling anything filesystem.
-        - system: Required by filesystem.
-        - thread: Required by coroutine/context.
-    - babeltrace/babeltrace-ctf: For accessing CTF traces.
+
+ - Boost
+    - coroutine/context: For an easy async pattern.
+    - filesystem: For handling anything filesystem.
+    - system: Required by filesystem.
+    - thread: Required by coroutine/context.
+ - babeltrace/babeltrace-ctf: For accessing CTF traces.
     - [process-cpp](http://launchpad.net/process-cpp): For interaction with the lttng control application.
 
     On Ubuntu, you can install all required build- and run-time dependencies with:
